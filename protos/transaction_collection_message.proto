@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "transaction_message.proto";
+
+message TransactionCollectionMessage {
+  repeated TransactionMessage transactions = 1;
+}

@@ -13,6 +13,8 @@ module Mmm
   class Application < Rails::Application
     config.load_defaults 7.0
 
+    config.paths.add "../messages", eager_load: true
+
     config.generators.system_tests = nil
   end
 end
